@@ -1,7 +1,7 @@
 // Inicio main Contacto
 
 .mainContacto {
-    height: 42em;
+    height: map-get($heightMain , contacto);
 }
 
 .form {

@@ -1,9 +1,9 @@
-
-/* Main Nosotros */
-.mainNosotros {
-    height: 130em;
+/* Mixin */
+@mixin ADN($background, $padding, $marginTop) {
+    background-color: $background;
+    padding: $padding;
+    margin-top: $marginTop;
 }
-
 
 /* Inicio seccion 1 main Nosotros */
 
@@ -33,10 +33,13 @@
 /* Inicio seccion 2 main Nosotros */
 
 .ADN {
-    background-color: $colorPrincipal !important;
-    color: $colorSecundario !important;
+    @extend .tituloAdn;
+    @include ADN($colorPrincipal, 10px, 50px)
+
+    //Así estaba antes y lo reemplace por el mixin
+    /*background-color: $colorPrincipal !important;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 50px;*/
 }
 
 .tituloAdn {    

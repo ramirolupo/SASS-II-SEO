@@ -2,8 +2,7 @@
 // Inicio main galeria
 
 .mainGaleria {
-    
-    height: 52em;
+        height: map-get($heightMain , galeria);
 }
 
 // Fin main galeria
